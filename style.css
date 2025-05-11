@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --light-purple: #dbd1fc;
+  --dark-purple: #7551dc;
+  --light-yellow: #f9eee2;
+  --dark-yellow: #ffcc6a;
+  --white: #ffffff;
+  --black: #121212;
+
+  --100: 8px;
+  --200: 16px;
+  --300: 24px;
+  --400: 32px;
+  --500: 40px;
+
+  --text-preset-1: 62px;
+  --text-preset-2: 40px;
+  --text-preset-3: 32px;
+  --text-preset-4: 18px;
+  --text-preset-5: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans";
+  background-color: #f6f5f6;
+  margin: 0;
+  padding: 0;
+}
+
+.bento {
+  margin: 50px 100px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "create social social scheudle"
+    "create social social scheudle"
+    "create social social scheudle"
+    "write accounts posting scheudle"
+    "write accounts posting scheudle"
+    "write audience grow grow"
+    "write audience grow grow";
+  gap: 32px;
+}
+
+.social-media {
+  grid-area: social;
+  display: flex;
+  padding: var(--400);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--300);
+  background-color: var(--dark-purple);
+  border-radius: 10px;
+}
+
+.social-media h1 {
+  color: var(--white);
+  text-align: center;
+  font-size: var(--text-preset-1);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 58px;
+  margin-bottom: var(--200);
+}
+
+.social-media div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media div img {
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.social-media div p {
+  color: var(--white);
+  line-height: 20px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.social-media h1 span {
+  color: var(--dark-yellow);
+}
+
+.accounts {
+  grid-area: accounts;
+  display: flex;
+  padding: var(--300);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.accounts img {
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.accounts h2 {
+  color: var(--black);
+  font-size: var(--text-preset-3);
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 500;
+
+  width: 208px;
+}
+
+.posting-scheudle {
+  grid-area: posting;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-yellow);
+  padding: var(--300) var(--300) 0px var(--300);
+  border-radius: 10px;
+  gap: var(--200);
+  position: relative;
+  overflow: hidden;
+}
+
+.posting-scheudle h2 {
+  max-width: 200px;
+  color: var(--black);
+  font-size: var(--text-preset-3);
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 500;
+  align-self: stretch;
+}
+
+.posting-scheudle img {
+  position: absolute;
+  width: 200px;
+  object-fit: cover;
+  top: 180px;
+}
+
+.scheudle-socialmedia {
+  grid-area: scheudle;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--400);
+  flex-direction: column;
+  gap: var(--300);
+  border-radius: 10px;
+  background-color: var(--light-purple);
+  position: relative;
+  overflow: hidden;
+}
+
+.scheudle-socialmedia h2 {
+  font-size: var(--text-preset-3);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--black);
+  align-self: stretch;
+}
+
+.scheudle-socialmedia img {
+  height: 350px;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  object-fit: cover;
+}
+
+.scheudle-socialmedia p {
+  top: 500px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--black);
+  line-height: 24px;
+}
+
+.grow-followers {
+  grid-area: grow;
+  display: flex;
+  padding: var(--300);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--dark-purple);
+  gap: 10px;
+}
+
+.grow-followers img {
+  height: 200px;
+}
+
+.grow-followers h2 {
+  color: var(--white);
+  font-size: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.faster-audience {
+  grid-area: audience;
+  display: flex;
+  padding: var(--300);
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.faster-audience h2 {
+  font-size: var(--text-preset-1);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.faster-audience p {
+  margin-bottom: 38px;
+}
+
+.faster-audience img {
+  width: 180px;
+}
+
+.create-scheudle {
+  grid-area: create;
+  display: flex;
+  padding: var(--400);
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--300);
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--light-yellow);
+}
+
+.create-scheudle h2 {
+  color: var(--black);
+  font-size: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.create-scheudle h2 em {
+  color: var(--dark-purple);
+}
+
+.create-scheudle img {
+  width: 200px;
+}
+
+.write-content {
+  grid-area: write;
+  display: flex;
+  padding: var(--300);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--dark-yellow);
+}
+
+.write-content h2 {
+  color: var(--black);
+  font-size: var(--text-preset-2);
+  line-height: 36px;
+  font-weight: 500;
+  font-style: normal;
+  align-self: stretch;
+  max-width: 200px;
+}
+
+.write-content img {
+  width: 250px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bento {
+    margin: 52px 40px;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "social social"
+      "accounts posting"
+      "scheudle scheudle"
+      "scheudle scheudle"
+      "grow grow"
+      "audience audience"
+      "create write";
+    gap: 32px;
+  }
+
+  .accounts img {
+    height: 70px;
+  }
+
+  .accounts h2 {
+    font-size: 26px;
+  }
+
+  .posting-scheudle h2 {
+    max-width: max-content;
+    font-size: 24px;
+  }
+
+  .posting-scheudle img {
+    object-fit: contain;
+    width: 150px;
+    top: 120px;
+  }
+
+  .scheudle-socialmedia {
+    overflow: visible;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scheudle-socialmedia h2 {
+    align-self: center;
+  }
+
+  .scheudle-socialmedia img {
+    position: static;
+    object-fit: contain;
+    height: auto;
+    width: 350px;
+    align-self: center;
+  }
+
+  .scheudle-socialmedia p {
+    align-self: center;
+    text-align: center;
+    width: 350px;
+  }
+
+  .grow-followers {
+    gap: 40px;
+  }
+
+  .faster-audience {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .faster-audience p {
+    margin-bottom: 0;
+  }
+
+  .create-scheudle h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .create-scheudle img {
+    width: 190px;
+  }
+
+  .write-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+
+  .write-content img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .bento {
+    margin: 32px 16px;
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+      "social"
+      "accounts"
+      "posting"
+      "scheudle"
+      "grow"
+      "audience"
+      "create"
+      "write";
+    gap: 32px;
+  }
+
+  .social-media {
+    width: 350px;
+  }
+
+  .social-media h1 {
+    font-size: 46px;
+    line-height: 42px;
+  }
+
+  .accounts {
+    width: 350px;
+  }
+
+  .accounts h2 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .accounts img {
+    width: 100%;
+  }
+
+  .posting-scheudle {
+    width: 350px;
+  }
+
+  .posting-scheudle img {
+    position: static;
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .scheudle-socialmedia {
+    width: 350px;
+  }
+
+  .scheudle-socialmedia h2 {
+    font-size: 22px;
+  }
+
+  .scheudle-socialmedia img {
+    max-width: 300px;
+  }
+
+  .scheudle-socialmedia p {
+    width: 270px;
+  }
+
+  .grow-followers {
+    width: 350px;
+    flex-direction: column;
+  }
+
+  .grow-followers h2 {
+    width: 250px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  .faster-audience {
+    width: 350px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .create-scheudle {
+    width: 350px;
+  }
+
+  .create-scheudle h2 {
+    font-size: 28px;
+  }
+
+  .write-content {
+    width: 350px;
+  }
+
+  .write-content h2 {
+    font-size: 30px;
+  }
+}
