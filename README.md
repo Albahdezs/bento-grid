@@ -1,21 +1,23 @@
-# Frontend Mentor - Bento grid solution
+# Frontend Mentor - Bento grid
 
 This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### 🎆 Imágenes
-
-- Versión móvil
-  ![Mobile](assets/Mobile.jpg)
-
-- Versión tablet
-  ![Tablet](assets/Tablet.jpg)
-
-- Versión ordenador
-  ![Mobile](assets/Desktop.jpg)
-
-### Live
+## 🛜 Live
 
 - Live URL: [Add live site URL here](https://your-live-site-url.com)
+
+## 🎆 Imágenes
+
+- Versión móvil<br />
+<img src="assets/Mobile.png" width="25%" height="25%">
+
+- Versión tablet
+<img src="assets/Tablet.png" width="25%" height="25%">
+
+- Versión ordenador
+<img src="assets/Desktop.png" width="50%" height="50%">
+
+
 
 ### 🏗️ Construido con
 
@@ -25,7 +27,7 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 - CSS Grid
 - Mobile-first workflow
 
-## Autor
+## 👩🏻‍💻 Autor
 
 - Website - [Alba Hernández](https://albahernandez.dev/)
 - Frontend Mentor - [@Albahdezs](https://www.frontendmentor.io/profile/Albahdezs)
